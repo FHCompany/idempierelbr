@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.fh.camaleo.lbr"
+      id="org.idempierelbr"
       label="Feature LBR"
       version="1.0.0.qualifier"
       provider-name="FH">
@@ -17,32 +17,23 @@
       [Enter License Description here.]
    </license>
 
-   <plugin
-         id="org.idempierelbr.cnab240"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.idempierelbr.cnab240-bradesco"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.idempierelbr.cnab240-febraban"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
 
    <plugin
          id="org.idempierelbr.core"
          download-size="0"
          install-size="0"
          version="0.0.0"
+	 autoStart="true"
+	 startLevel="1"
+         unpack="false"/>
+
+  <plugin
+         id="org.idempierelbr.cnab240"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         autoStart="true"
+         startLevel="1"
          unpack="false"/>
 
    <plugin
@@ -51,6 +42,8 @@
          install-size="0"
          version="0.0.0"
          fragment="true"
+         autoStart="true"
+         startLevel="1"
          unpack="false"/>
 
    <plugin
@@ -58,21 +51,17 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
+         autoStart="true"
+         startLevel="1"
          unpack="false"/>
-		 
-	<plugin
-         id="org.idempierelbr.nfs"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
 
    <plugin
          id="org.idempierelbr.open-items"
          download-size="0"
          install-size="0"
          version="0.0.0"
+         autoStart="true"
+         startLevel="1"
          unpack="false"/>
 
    <plugin
@@ -80,6 +69,8 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
+         autoStart="true"
+         startLevel="1"
          unpack="false"/>
 
    <plugin
@@ -87,55 +78,27 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
+         autoStart="true"
+         startLevel="1"
          unpack="false"/>
 
+
    <plugin
-         id="com.todobom.idempierelbr.banking.bancodobrasil"
+         id="org.idempierelbr.cnab240-bradesco"
          download-size="0"
          install-size="0"
          version="0.0.0"
+         autoStart="true"
+         startLevel="1"
          unpack="false"/>
 
    <plugin
-         id="com.todobom.idempierelbr.banking.banrisul"
+         id="org.idempierelbr.cnab240-febraban"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.todobom.idempierelbr.banking.bradesco"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.todobom.idempierelbr.banking.caixa"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.todobom.idempierelbr.banking.itau"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.todobom.idempierelbr.banking.santander"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.todobom.idempierelbr.banking.sicoob"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
+         autoStart="true"
+         startLevel="1"
          unpack="false"/>
 
 </feature>
