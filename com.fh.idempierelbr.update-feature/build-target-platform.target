@@ -3,7 +3,7 @@
 <locations>
   <location path="${workspace_loc}/targetPlatform" type="Directory"/>
   <location path="/tmp/idempiere-core/targetPlatform/plugins" type="Directory"/>
-  <location path="/tmp/buckminster/build/org.adempiere.server_4.1.0-eclipse.feature/site.p2/plugins" type="Directory"/>
+  <location path="/tmp/buckminster/build/org.adempiere.server_5.1.0-eclipse.feature/site.p2/plugins" type="Directory"/>
 </locations>
 <environment>
 <os>*</os>
