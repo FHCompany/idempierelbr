@@ -118,6 +118,6 @@ ALTER TABLE LBR_TaxConfig_Region DROP CONSTRAINT lbrtaxconfiguration_lbrtaxconf
 ALTER TABLE LBR_TaxConfig_Region ADD CONSTRAINT LBRTaxConfigurationLBRTaxConfR FOREIGN KEY (LBR_TaxConfiguration_ID) REFERENCES lbr_taxconfiguration(lbr_taxconfiguration_id) DEFERRABLE INITIALLY DEFERRED
 ;
 
-SELECT register_migration_script('201811091305_FixFKs.sql') FROM dual
+SELECT lbr_register_migration_script('201811091305_FixFKs.sql') FROM dual
 ;
 
