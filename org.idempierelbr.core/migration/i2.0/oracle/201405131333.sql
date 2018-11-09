@@ -382,8 +382,8 @@ ALTER TABLE LBR_NotaFiscalTransp ADD LBR_LicensePlateRegion_ID NUMBER(10) DEFAUL
 ;
 
 -- May 13, 2014 10:31:09 AM BRT
-ALTER TABLE LBR_NotaFiscalTransp ADD CONSTRAINT LBRLicensePlateRegion_LBRNotaF FOREIGN KEY (LBR_LicensePlateRegion_ID) REFERENCES c_region(c_region_id) DEFERRABLE INITIALLY DEFERRED
-;
+--ALTER TABLE LBR_NotaFiscalTransp ADD CONSTRAINT LBRLicensePlateRegion_LBRNotaF FOREIGN KEY (LBR_LicensePlateRegion_ID) REFERENCES c_region(c_region_id) DEFERRABLE INITIALLY DEFERRED
+--;
 
 -- May 13, 2014 10:31:50 AM BRT
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,FKConstraintType,AD_Element_ID,AD_Reference_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000702,'N','N','N',0,'N',20,'N','N','N','Y','13c663f0-0b35-46de-ac29-d152109875d0','Y','LBR_Ferry','Ferry Identification','Y',TO_DATE('2014-05-13 10:31:50','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-05-13 10:31:50','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N','N',1000196,10,1000036,0,'LBR')
@@ -1101,8 +1101,8 @@ ALTER TABLE LBR_NotaFiscalTrailer ADD LBR_NotaFiscalTransp_ID NUMBER(10) NOT NUL
 ;
 
 -- May 14, 2014 9:47:31 AM BRT
-ALTER TABLE LBR_NotaFiscalTrailer ADD CONSTRAINT LBRNotaFiscalTransp_LBRNotaFis FOREIGN KEY (LBR_NotaFiscalTransp_ID) REFERENCES lbr_notafiscaltransp(lbr_notafiscaltransp_id) ON DELETE CASCADE DEFERRABLE INITIALLY DEFERRED
-;
+--ALTER TABLE LBR_NotaFiscalTrailer ADD CONSTRAINT LBRNotaFiscalTransp_LBRNotaFis FOREIGN KEY (LBR_NotaFiscalTransp_ID) REFERENCES lbr_notafiscaltransp(lbr_notafiscaltransp_id) ON DELETE CASCADE DEFERRABLE INITIALLY DEFERRED
+--;
 
 -- May 14, 2014 9:48:25 AM BRT
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,FKConstraintType,AD_Element_ID,AD_Reference_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000715,'N','N','N',0,'N',20,'N','N','N','Y','2037e380-830d-447f-9a6e-4c227f74fda6','Y','LBR_RNTC','National Registry of Cargo Carriers','Y',TO_DATE('2014-05-14 09:48:25','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-05-14 09:48:25','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N','N',1000193,10,1000037,0,'LBR')

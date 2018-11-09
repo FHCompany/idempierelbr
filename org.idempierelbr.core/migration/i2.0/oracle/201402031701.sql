@@ -1108,8 +1108,8 @@ ALTER TABLE LBR_TaxConfig_BPGroup ADD LBR_TaxConfiguration_ID NUMBER(10) NOT NUL
 ;
 
 -- Feb 4, 2014 12:58:17 PM BRST
-ALTER TABLE LBR_TaxConfig_BPGroup ADD CONSTRAINT LBRTaxConfiguration_LBRTaxConf FOREIGN KEY (LBR_TaxConfiguration_ID) REFERENCES lbr_taxconfiguration(lbr_taxconfiguration_id) DEFERRABLE INITIALLY DEFERRED
-;
+--ALTER TABLE LBR_TaxConfig_BPGroup ADD CONSTRAINT LBRTaxConfiguration_LBRTaxConf FOREIGN KEY (LBR_TaxConfiguration_ID) REFERENCES lbr_taxconfiguration(lbr_taxconfiguration_id) DEFERRABLE INITIALLY DEFERRED
+--;
 
 -- Feb 4, 2014 12:58:52 PM BRST
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Description,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,FKConstraintType,AD_Element_ID,AD_Reference_ID,AD_Reference_Value_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000296,'N','N','N',0,'N',2,'N','N','N','Y','6a882d1f-06fb-48dc-bc8b-ff864a525411','Y','LBR_TaxStatus','Defines the Tax Status','Tax Status','Y',TO_DATE('2014-02-04 12:58:52','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-02-04 12:58:52','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N','N',1000077,17,1000015,1000020,0,'LBR')
@@ -1394,8 +1394,8 @@ ALTER TABLE LBR_TaxConfig_Region ADD LBR_TaxConfiguration_ID NUMBER(10) NOT NULL
 ;
 
 -- Feb 4, 2014 1:50:29 PM BRST
-ALTER TABLE LBR_TaxConfig_Region ADD CONSTRAINT LBRTaxConfiguration_LBRTaxConf FOREIGN KEY (LBR_TaxConfiguration_ID) REFERENCES lbr_taxconfiguration(lbr_taxconfiguration_id) DEFERRABLE INITIALLY DEFERRED
-;
+--ALTER TABLE LBR_TaxConfig_Region ADD CONSTRAINT LBRTaxConfiguration_LBRTaxConf FOREIGN KEY (LBR_TaxConfiguration_ID) REFERENCES lbr_taxconfiguration(lbr_taxconfiguration_id) DEFERRABLE INITIALLY DEFERRED
+--;
 
 -- Feb 4, 2014 1:51:02 PM BRST
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Description,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,FKConstraintType,AD_Element_ID,AD_Reference_ID,AD_Reference_Value_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000310,'N','N','N',0,'N',2,'N','N','N','Y','a4bb1093-429d-4c23-a651-213b285bc61e','Y','LBR_TaxStatus','Defines the Tax Status','Tax Status','Y',TO_DATE('2014-02-04 13:51:02','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-02-04 13:51:02','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N','N',1000077,17,1000015,1000021,0,'LBR')
@@ -1692,8 +1692,8 @@ ALTER TABLE LBR_TaxConfig_Product ADD LBR_TaxConfiguration_ID NUMBER(10) NOT NUL
 ;
 
 -- Feb 4, 2014 2:28:38 PM BRST
-ALTER TABLE LBR_TaxConfig_Product ADD CONSTRAINT LBRTaxConfiguration_LBRTaxConf FOREIGN KEY (LBR_TaxConfiguration_ID) REFERENCES lbr_taxconfiguration(lbr_taxconfiguration_id) DEFERRABLE INITIALLY DEFERRED
-;
+--ALTER TABLE LBR_TaxConfig_Product ADD CONSTRAINT LBRTaxConfiguration_LBRTaxConf FOREIGN KEY (LBR_TaxConfiguration_ID) REFERENCES lbr_taxconfiguration(lbr_taxconfiguration_id) DEFERRABLE INITIALLY DEFERRED
+--;
 
 -- Feb 4, 2014 2:30:11 PM BRST
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Description,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,FKConstraintType,AD_Element_ID,AD_Reference_ID,AD_Reference_Value_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000324,'N','N','N',0,'N',2,'N','N','N','Y','cca7357d-7163-4730-86a8-179b4d6f0abc','Y','LBR_TaxStatus','Defines the Tax Status','Tax Status','Y',TO_DATE('2014-02-04 14:30:11','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-02-04 14:30:11','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N','N',1000077,17,1000015,1000022,0,'LBR')
@@ -1918,8 +1918,8 @@ ALTER TABLE LBR_TaxConfig_ProductGroup ADD LBR_LegalMessage_ID NUMBER(10) DEFAUL
 ;
 
 -- Feb 4, 2014 2:48:44 PM BRST
-ALTER TABLE LBR_TaxConfig_ProductGroup ADD CONSTRAINT LBRLegalMessage_LBRTaxConfigPr FOREIGN KEY (LBR_LegalMessage_ID) REFERENCES lbr_legalmessage(lbr_legalmessage_id) DEFERRABLE INITIALLY DEFERRED
-;
+--ALTER TABLE LBR_TaxConfig_ProductGroup ADD CONSTRAINT LBRLegalMessage_LBRTaxConfigPr FOREIGN KEY (LBR_LegalMessage_ID) REFERENCES lbr_legalmessage(lbr_legalmessage_id) DEFERRABLE INITIALLY DEFERRED
+--;
 
 -- Feb 4, 2014 2:50:36 PM BRST
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Description,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,FKConstraintType,AD_Element_ID,AD_Reference_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000335,'Y','N','N',0,'N',10,'N','N','N','Y','f634f9c4-a097-49c9-a0bf-5ab0c04028cc','Y','LBR_Tax_ID','Identifies a transaction tax (document/line)','Transaction Tax','Y',TO_DATE('2014-02-04 14:50:36','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-02-04 14:50:36','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N','N',1000053,1000010,1000023,0,'LBR')
@@ -1974,8 +1974,8 @@ ALTER TABLE LBR_TaxConfig_ProductGroup ADD LBR_TaxConfiguration_ID NUMBER(10) NO
 ;
 
 -- Feb 4, 2014 3:17:36 PM BRST
-ALTER TABLE LBR_TaxConfig_ProductGroup ADD CONSTRAINT LBRTaxConfiguration_LBRTaxConf FOREIGN KEY (LBR_TaxConfiguration_ID) REFERENCES lbr_taxconfiguration(lbr_taxconfiguration_id) DEFERRABLE INITIALLY DEFERRED
-;
+--ALTER TABLE LBR_TaxConfig_ProductGroup ADD CONSTRAINT LBRTaxConfiguration_LBRTaxConf FOREIGN KEY (LBR_TaxConfiguration_ID) REFERENCES lbr_taxconfiguration(lbr_taxconfiguration_id) DEFERRABLE INITIALLY DEFERRED
+--;
 
 -- Feb 4, 2014 3:18:31 PM BRST
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Description,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,FKConstraintType,AD_Element_ID,AD_Reference_ID,AD_Reference_Value_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000339,'N','N','N',0,'N',2,'N','N','N','Y','d17e6d27-9f7b-47e6-96b5-553dded1f349','Y','LBR_TaxStatus','Defines the Tax Status','Tax Status','Y',TO_DATE('2014-02-04 15:18:31','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-02-04 15:18:31','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N','N',1000077,17,1000015,1000023,0,'LBR')

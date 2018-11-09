@@ -218,8 +218,8 @@ ALTER TABLE LBR_NotaFiscalLineComb ADD CONSTRAINT CreatedBy_LBRNotaFiscalLineCom
 ;
 
 -- 02/04/2015 18h45min42s BRT
-ALTER TABLE LBR_NotaFiscalLineComb ADD CONSTRAINT LBRNotaFiscalLine_LBRNotaFisca FOREIGN KEY (LBR_NotaFiscalLine_ID) REFERENCES lbr_notafiscalline(lbr_notafiscalline_id) DEFERRABLE INITIALLY DEFERRED
-;
+--ALTER TABLE LBR_NotaFiscalLineComb ADD CONSTRAINT LBRNotaFiscalLine_LBRNotaFisca FOREIGN KEY (LBR_NotaFiscalLine_ID) REFERENCES lbr_notafiscalline(lbr_notafiscalline_id) DEFERRABLE INITIALLY DEFERRED
+--;
 
 -- 02/04/2015 18h45min42s BRT
 ALTER TABLE LBR_NotaFiscalLineComb ADD CONSTRAINT UpdatedBy_LBRNotaFiscalLineCom FOREIGN KEY (UpdatedBy) REFERENCES ad_user(ad_user_id) DEFERRABLE INITIALLY DEFERRED
