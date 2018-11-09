@@ -71,7 +71,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Jan 16, 2014 3:05:33 PM BRST
-ALTER TABLE LBR_FiscalGroup_BPartner ADD Description VARCHAR2(255) DEFAULT NULL 
+ALTER TABLE LBR_FiscalGroup_BPartner ADD Description NVARCHAR2(255) DEFAULT NULL 
 ;
 
 -- Jan 16, 2014 3:05:59 PM BRST
@@ -110,7 +110,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Jan 16, 2014 3:09:00 PM BRST
-ALTER TABLE LBR_FiscalGroup_BPartner ADD LBR_FiscalGroup_BPartner_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_FiscalGroup_BPartner ADD LBR_FiscalGroup_BPartner_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Jan 16, 2014 3:09:00 PM BRST
@@ -122,7 +122,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Jan 16, 2014 3:09:53 PM BRST
-ALTER TABLE LBR_FiscalGroup_BPartner ADD Name VARCHAR2(60) NOT NULL
+ALTER TABLE LBR_FiscalGroup_BPartner ADD Name NVARCHAR2(60) NOT NULL
 ;
 
 -- Jan 16, 2014 3:10:26 PM BRST

@@ -128,7 +128,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- 20/08/2015 16h46min38s BRT
-ALTER TABLE LBR_Collection_Default ADD LBR_PaymentAllocationPriority VARCHAR2(3) DEFAULT 'CIP' 
+ALTER TABLE LBR_Collection_Default ADD LBR_PaymentAllocationPriority NVARCHAR2(3) DEFAULT 'CIP' 
 ;
 
 -- 20/08/2015 16h47min2s BRT

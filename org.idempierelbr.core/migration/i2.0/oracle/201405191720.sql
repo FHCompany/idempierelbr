@@ -161,7 +161,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 21, 2014 10:11:07 AM BRT
-ALTER TABLE C_DocType ADD LBR_NFBModel VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE C_DocType ADD LBR_NFBModel NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- May 21, 2014 10:12:25 AM BRT
@@ -169,7 +169,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 21, 2014 10:12:27 AM BRT
-ALTER TABLE C_DocType ADD LBR_NFeSerie VARCHAR2(3) DEFAULT NULL 
+ALTER TABLE C_DocType ADD LBR_NFeSerie NVARCHAR2(3) DEFAULT NULL 
 ;
 
 -- May 21, 2014 10:13:37 AM BRT
@@ -313,7 +313,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 21, 2014 11:28:02 AM BRT
-ALTER TABLE C_Country ADD LBR_CountryCode VARCHAR2(5) DEFAULT NULL 
+ALTER TABLE C_Country ADD LBR_CountryCode NVARCHAR2(5) DEFAULT NULL 
 ;
 
 -- May 21, 2014 11:29:29 AM BRT
@@ -1264,7 +1264,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 21, 2014 1:34:46 PM BRT
-ALTER TABLE AD_OrgInfo ADD LBR_CNAE VARCHAR2(10) DEFAULT NULL 
+ALTER TABLE AD_OrgInfo ADD LBR_CNAE NVARCHAR2(10) DEFAULT NULL 
 ;
 
 -- May 21, 2014 1:35:10 PM BRT
@@ -1344,7 +1344,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 22, 2014 10:51:20 AM BRT
-ALTER TABLE LBR_DigitalCertificate ADD LBR_DigitalCertificate_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_DigitalCertificate ADD LBR_DigitalCertificate_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- May 22, 2014 10:51:20 AM BRT
@@ -1415,7 +1415,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 22, 2014 10:54:41 AM BRT
-ALTER TABLE LBR_DigitalCertificate ADD Alias VARCHAR2(255) DEFAULT NULL 
+ALTER TABLE LBR_DigitalCertificate ADD Alias NVARCHAR2(255) DEFAULT NULL 
 ;
 
 -- May 22, 2014 10:55:05 AM BRT
@@ -1423,7 +1423,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 22, 2014 10:55:06 AM BRT
-ALTER TABLE LBR_DigitalCertificate ADD Description VARCHAR2(255) DEFAULT NULL 
+ALTER TABLE LBR_DigitalCertificate ADD Description NVARCHAR2(255) DEFAULT NULL 
 ;
 
 -- May 22, 2014 10:56:00 AM BRT
@@ -1431,7 +1431,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 22, 2014 10:56:01 AM BRT
-ALTER TABLE LBR_DigitalCertificate ADD Name VARCHAR2(60) NOT NULL
+ALTER TABLE LBR_DigitalCertificate ADD Name NVARCHAR2(60) NOT NULL
 ;
 
 -- May 22, 2014 10:58:15 AM BRT
@@ -1439,7 +1439,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 22, 2014 10:58:17 AM BRT
-ALTER TABLE LBR_DigitalCertificate ADD Password VARCHAR2(60) DEFAULT NULL 
+ALTER TABLE LBR_DigitalCertificate ADD Password NVARCHAR2(60) DEFAULT NULL 
 ;
 
 -- May 22, 2014 10:58:42 AM BRT
@@ -1447,7 +1447,7 @@ UPDATE AD_Column SET FieldLength=1024,Updated=TO_DATE('2014-05-22 10:58:42','YYY
 ;
 
 -- May 22, 2014 10:58:46 AM BRT
-ALTER TABLE LBR_DigitalCertificate MODIFY Password VARCHAR2(1024) DEFAULT NULL 
+ALTER TABLE LBR_DigitalCertificate MODIFY Password NVARCHAR2(1024) DEFAULT NULL 
 ;
 
 -- May 22, 2014 10:59:52 AM BRT
@@ -1503,7 +1503,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 22, 2014 11:05:06 AM BRT
-ALTER TABLE LBR_DigitalCertificate ADD LBR_CertType VARCHAR2(3) DEFAULT NULL 
+ALTER TABLE LBR_DigitalCertificate ADD LBR_CertType NVARCHAR2(3) DEFAULT NULL 
 ;
 
 -- May 22, 2014 11:06:37 AM BRT
@@ -1954,7 +1954,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 26, 2014 1:06:33 PM BRT
-ALTER TABLE LBR_DocLine_ISSQN ADD LBR_ISS_Chargeability VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE LBR_DocLine_ISSQN ADD LBR_ISS_Chargeability NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- May 26, 2014 1:08:58 PM BRT
@@ -1966,7 +1966,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 26, 2014 1:09:29 PM BRT
-ALTER TABLE LBR_DocLine_ISSQN ADD LBR_ServiceCode VARCHAR2(20) DEFAULT NULL 
+ALTER TABLE LBR_DocLine_ISSQN ADD LBR_ServiceCode NVARCHAR2(20) DEFAULT NULL 
 ;
 
 -- May 26, 2014 1:13:03 PM BRT
@@ -2030,7 +2030,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 26, 2014 1:19:44 PM BRT
-ALTER TABLE LBR_DocLine_ISSQN ADD ProcessName VARCHAR2(30) DEFAULT NULL 
+ALTER TABLE LBR_DocLine_ISSQN ADD ProcessName NVARCHAR2(30) DEFAULT NULL 
 ;
 
 -- May 26, 2014 1:23:00 PM BRT
@@ -3218,7 +3218,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- May 30, 2014 3:39:35 PM BRT
-ALTER TABLE C_Region ADD LBR_RegionCode VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE C_Region ADD LBR_RegionCode NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- May 30, 2014 3:40:29 PM BRT

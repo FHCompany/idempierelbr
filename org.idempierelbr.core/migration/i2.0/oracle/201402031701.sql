@@ -426,7 +426,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 3, 2014 1:25:26 PM BRST
-ALTER TABLE LBR_TaxConfiguration ADD LBR_TaxConfiguration_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfiguration ADD LBR_TaxConfiguration_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Feb 3, 2014 1:25:26 PM BRST
@@ -732,7 +732,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 11:12:59 AM BRST
-ALTER TABLE LBR_TaxConfig_BPartner ADD LBR_TaxConfig_BPartner_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_BPartner ADD LBR_TaxConfig_BPartner_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 11:12:59 AM BRST
@@ -812,7 +812,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 12:18:30 PM BRST
-ALTER TABLE LBR_TaxConfig_BPartner ADD LBR_TaxStatus VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_BPartner ADD LBR_TaxStatus NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 12:18:53 PM BRST
@@ -1052,8 +1052,8 @@ ALTER TABLE LBR_TaxConfig_BPGroup ADD LBR_LegalMessage_ID NUMBER(10) DEFAULT NUL
 ;
 
 -- Feb 4, 2014 12:54:39 PM BRST
-ALTER TABLE LBR_TaxConfig_BPGroup ADD CONSTRAINT LBRLegalMessage_LBRTaxConfigBP FOREIGN KEY (LBR_LegalMessage_ID) REFERENCES lbr_legalmessage(lbr_legalmessage_id) DEFERRABLE INITIALLY DEFERRED
-;
+--ALTER TABLE LBR_TaxConfig_BPGroup ADD CONSTRAINT LBRLegalMessage_LBRTaxConfigBP FOREIGN KEY (LBR_LegalMessage_ID) REFERENCES lbr_legalmessage(lbr_legalmessage_id) DEFERRABLE INITIALLY DEFERRED
+--;
 
 -- Feb 4, 2014 12:55:27 PM BRST
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Description,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,FKConstraintType,AD_Element_ID,AD_Reference_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000292,'Y','N','N',0,'N',10,'N','N','N','Y','0bbb5909-7f73-4048-8ac8-20f78ab9f9d7','Y','LBR_Tax_ID','Identifies a transaction tax (document/line)','Transaction Tax','Y',TO_DATE('2014-02-04 12:55:27','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-02-04 12:55:27','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N','N',1000053,1000010,1000020,0,'LBR')
@@ -1088,7 +1088,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 12:57:43 PM BRST
-ALTER TABLE LBR_TaxConfig_BPGroup ADD LBR_TaxConfig_BPGroup_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_BPGroup ADD LBR_TaxConfig_BPGroup_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 12:57:43 PM BRST
@@ -1116,7 +1116,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 12:58:57 PM BRST
-ALTER TABLE LBR_TaxConfig_BPGroup ADD LBR_TaxStatus VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_BPGroup ADD LBR_TaxStatus NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 12:59:23 PM BRST
@@ -1374,7 +1374,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 1:49:59 PM BRST
-ALTER TABLE LBR_TaxConfig_Region ADD LBR_TaxConfig_Region_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_Region ADD LBR_TaxConfig_Region_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 1:49:59 PM BRST
@@ -1402,7 +1402,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 1:51:10 PM BRST
-ALTER TABLE LBR_TaxConfig_Region ADD LBR_TaxStatus VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_Region ADD LBR_TaxStatus NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 1:52:02 PM BRST
@@ -1672,7 +1672,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 2:27:52 PM BRST
-ALTER TABLE LBR_TaxConfig_Product ADD LBR_TaxConfig_Product_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_Product ADD LBR_TaxConfig_Product_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 2:27:52 PM BRST
@@ -1700,7 +1700,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 2:30:16 PM BRST
-ALTER TABLE LBR_TaxConfig_Product ADD LBR_TaxStatus VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_Product ADD LBR_TaxStatus NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 2:32:42 PM BRST
@@ -1954,7 +1954,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 3:07:36 PM BRST
-ALTER TABLE LBR_TaxConfig_ProductGroup ADD LBR_TaxConfig_ProductGroup_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_ProductGroup ADD LBR_TaxConfig_ProductGroup_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 3:07:36 PM BRST
@@ -1982,7 +1982,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 4, 2014 3:19:07 PM BRST
-ALTER TABLE LBR_TaxConfig_ProductGroup ADD LBR_TaxStatus VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE LBR_TaxConfig_ProductGroup ADD LBR_TaxStatus NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- Feb 4, 2014 3:21:35 PM BRST
@@ -2221,7 +2221,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 5, 2014 10:16:11 AM BRST
-ALTER TABLE LBR_TaxDefinition ADD Description VARCHAR2(255) DEFAULT NULL 
+ALTER TABLE LBR_TaxDefinition ADD Description NVARCHAR2(255) DEFAULT NULL 
 ;
 
 -- Feb 5, 2014 10:16:30 AM BRST
@@ -2408,7 +2408,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 5, 2014 10:41:47 AM BRST
-ALTER TABLE LBR_TaxDefinition ADD LBR_TaxDefinition_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_TaxDefinition ADD LBR_TaxDefinition_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Feb 5, 2014 10:41:47 AM BRST
@@ -2420,7 +2420,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 5, 2014 10:42:25 AM BRST
-ALTER TABLE LBR_TaxDefinition ADD LBR_TaxStatus VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE LBR_TaxDefinition ADD LBR_TaxStatus NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- Feb 5, 2014 10:44:40 AM BRST
@@ -2428,7 +2428,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 5, 2014 10:44:44 AM BRST
-ALTER TABLE LBR_TaxDefinition ADD LBR_TransactionType VARCHAR2(3) DEFAULT NULL 
+ALTER TABLE LBR_TaxDefinition ADD LBR_TransactionType NVARCHAR2(3) DEFAULT NULL 
 ;
 
 -- Feb 5, 2014 10:46:08 AM BRST
@@ -2574,7 +2574,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 5, 2014 11:18:42 AM BRST
-ALTER TABLE LBR_CFOP ADD Description VARCHAR2(255) DEFAULT NULL 
+ALTER TABLE LBR_CFOP ADD Description NVARCHAR2(255) DEFAULT NULL 
 ;
 
 -- Feb 5, 2014 11:19:01 AM BRST
@@ -2613,7 +2613,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 5, 2014 11:20:52 AM BRST
-ALTER TABLE LBR_CFOP ADD LBR_CFOP_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_CFOP ADD LBR_CFOP_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Feb 5, 2014 11:20:52 AM BRST
@@ -2650,7 +2650,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
 ;
 
 -- Feb 5, 2014 11:22:56 AM BRST
-ALTER TABLE LBR_CFOP ADD Value VARCHAR2(5) NOT NULL
+ALTER TABLE LBR_CFOP ADD Value NVARCHAR2(5) NOT NULL
 ;
 
 -- Feb 5, 2014 12:04:46 PM BRST
@@ -3378,7 +3378,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 5, 2014 1:59:05 PM BRST
-ALTER TABLE LBR_CFOPLine ADD LBR_CFOPLine_UU VARCHAR2(36) DEFAULT NULL 
+ALTER TABLE LBR_CFOPLine ADD LBR_CFOPLine_UU NVARCHAR2(36) DEFAULT NULL 
 ;
 
 -- Feb 5, 2014 1:59:05 PM BRST
@@ -3486,7 +3486,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 5, 2014 3:02:10 PM BRST
-ALTER TABLE LBR_CFOPLine ADD LBR_TaxStatus VARCHAR2(2) DEFAULT NULL 
+ALTER TABLE LBR_CFOPLine ADD LBR_TaxStatus NVARCHAR2(2) DEFAULT NULL 
 ;
 
 -- Feb 5, 2014 3:02:53 PM BRST
@@ -3494,7 +3494,7 @@ INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMand
 ;
 
 -- Feb 5, 2014 3:02:58 PM BRST
-ALTER TABLE LBR_CFOPLine ADD LBR_TransactionType VARCHAR2(3) DEFAULT NULL 
+ALTER TABLE LBR_CFOPLine ADD LBR_TransactionType NVARCHAR2(3) DEFAULT NULL 
 ;
 
 -- Feb 5, 2014 3:03:20 PM BRST
