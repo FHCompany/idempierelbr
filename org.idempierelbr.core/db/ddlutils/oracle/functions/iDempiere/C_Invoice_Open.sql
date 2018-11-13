@@ -86,7 +86,7 @@ BEGIN
 		--  iDempiere
 	    --	Calculate Allocated Amount
 		FOR a IN Cur_Alloc LOOP
-	        v_Temp := a.Amount + a.DisCountAmt + a.WriteOffAmt - ar.InterestAmt;
+	        v_Temp := a.Amount + a.DisCountAmt + a.WriteOffAmt - a.InterestAmt;
 			v_PaidAmt := v_PaidAmt
 	        -- Allocation
 				+ currencyConvert(v_Temp * v_MultiplierAP,
