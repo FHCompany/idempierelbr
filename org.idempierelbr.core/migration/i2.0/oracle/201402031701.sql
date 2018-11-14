@@ -1958,8 +1958,8 @@ ALTER TABLE LBR_TaxConfig_ProductGroup ADD LBR_TaxConfig_ProductGroup_UU NVARCHA
 ;
 
 -- Feb 4, 2014 3:07:36 PM BRST
-ALTER TABLE LBR_TaxConfig_ProductGroup ADD CONSTRAINT LBR_TaxConfig_ProductGroup__uu_idx UNIQUE (LBR_TaxConfig_ProductGroup_UU)
-;
+-- ALTER TABLE LBR_TaxConfig_ProductGroup ADD CONSTRAINT LBR_TaxConfig_ProductGroup__uu_idx UNIQUE (LBR_TaxConfig_ProductGroup_UU)
+-- ;
 
 -- Feb 4, 2014 3:17:32 PM BRST
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Description,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,FKConstraintType,AD_Element_ID,AD_Reference_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000338,'Y','N','N',0,'N',22,'N','N','N','Y','2b14318e-9a64-4a6d-946b-75a86283630d','N','LBR_TaxConfiguration_ID','Tax Configuration Used','Tax Configuration','Y',TO_DATE('2014-02-04 15:17:32','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-02-04 15:17:32','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N','N',1000073,19,1000023,0,'LBR')

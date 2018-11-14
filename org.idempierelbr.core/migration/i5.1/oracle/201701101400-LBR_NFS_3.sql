@@ -115,11 +115,11 @@ UPDATE AD_InfoColumn SET ColumnName='LBR_MensagensRetorno', Name='Mensagens de R
 ;
 
 -- 10/01/2017 11h37min48s BRST
-INSERT INTO AD_Column (AD_Column_ID,Version,Name,Description,AD_Table_ID,ColumnName,FieldLength,IsKey,IsParent,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsEncrypted,AD_Reference_ID,AD_Client_ID,AD_Org_ID,IsActive,Created,CreatedBy,Updated,UpdatedBy,AD_Element_ID,IsUpdateable,IsSelectionColumn,EntityType,IsSyncDatabase,IsAlwaysUpdateable,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsAllowCopy,SeqNoSelection,IsToolbarButton,IsSecure) VALUES (801588,0,'Mensagens de Retorno','Mensagens de Retorno (erros)',800035,'LBR_MensagensRetorno',2048,'N','N','N','N','N',0,'N',14,0,0,'Y',TO_DATE('2017-01-10 11:37:48','YYYY-MM-DD HH24:MI:SS'),0,TO_DATE('2017-01-10 11:37:48','YYYY-MM-DD HH24:MI:SS'),0,800412,'Y','N','U','N','N','N','Y','40128a68-8a28-4dbf-9bba-d50936c4dc97','Y',0,'N','N')
+INSERT INTO AD_Column (AD_Column_ID,Version,Name,Description,AD_Table_ID,ColumnName,FieldLength,IsKey,IsParent,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsEncrypted,AD_Reference_ID,AD_Client_ID,AD_Org_ID,IsActive,Created,CreatedBy,Updated,UpdatedBy,AD_Element_ID,IsUpdateable,IsSelectionColumn,EntityType,IsSyncDatabase,IsAlwaysUpdateable,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsAllowCopy,SeqNoSelection,IsToolbarButton,IsSecure) VALUES (801588,0,'Mensagens de Retorno','Mensagens de Retorno (erros)',800035,'LBR_MensagensRetorno',2000,'N','N','N','N','N',0,'N',14,0,0,'Y',TO_DATE('2017-01-10 11:37:48','YYYY-MM-DD HH24:MI:SS'),0,TO_DATE('2017-01-10 11:37:48','YYYY-MM-DD HH24:MI:SS'),0,800412,'Y','N','U','N','N','N','Y','40128a68-8a28-4dbf-9bba-d50936c4dc97','Y',0,'N','N')
 ;
 
 -- 10/01/2017 11h37min49s BRST
-ALTER TABLE LBR_NFS ADD LBR_MensagensRetorno NVARCHAR2(2048) DEFAULT NULL 
+ALTER TABLE LBR_NFS ADD LBR_MensagensRetorno NVARCHAR2(2000) DEFAULT NULL 
 ;
 
 -- 10/01/2017 11h38min15s BRST
@@ -219,7 +219,7 @@ INSERT INTO AD_Field (AD_Field_ID,Name,AD_Tab_ID,AD_Column_ID,IsDisplayed,Displa
 ;
 
 -- 10/01/2017 12h10min54s BRST
-INSERT INTO AD_Field (AD_Field_ID,Name,Description,AD_Tab_ID,AD_Column_ID,IsDisplayed,DisplayLength,SeqNo,IsSameLine,IsHeading,IsFieldOnly,IsEncrypted,AD_Client_ID,AD_Org_ID,IsActive,Created,CreatedBy,Updated,UpdatedBy,IsReadOnly,IsCentrallyMaintained,EntityType,AD_Field_UU,IsDisplayedGrid,SeqNoGrid,ColumnSpan,NumLines) VALUES (801343,'Mensagens de Retorno','Mensagens de Retorno (erros)',800043,801588,'Y',2048,430,'N','N','N','N',0,0,'Y',TO_DATE('2017-01-10 12:10:54','YYYY-MM-DD HH24:MI:SS'),0,TO_DATE('2017-01-10 12:10:54','YYYY-MM-DD HH24:MI:SS'),0,'N','Y','U','fc5016a6-f72e-4de6-97e8-bfdb68cf7f65','Y',530,5,3)
+INSERT INTO AD_Field (AD_Field_ID,Name,Description,AD_Tab_ID,AD_Column_ID,IsDisplayed,DisplayLength,SeqNo,IsSameLine,IsHeading,IsFieldOnly,IsEncrypted,AD_Client_ID,AD_Org_ID,IsActive,Created,CreatedBy,Updated,UpdatedBy,IsReadOnly,IsCentrallyMaintained,EntityType,AD_Field_UU,IsDisplayedGrid,SeqNoGrid,ColumnSpan,NumLines) VALUES (801343,'Mensagens de Retorno','Mensagens de Retorno (erros)',800043,801588,'Y',2000,430,'N','N','N','N',0,0,'Y',TO_DATE('2017-01-10 12:10:54','YYYY-MM-DD HH24:MI:SS'),0,TO_DATE('2017-01-10 12:10:54','YYYY-MM-DD HH24:MI:SS'),0,'N','Y','U','fc5016a6-f72e-4de6-97e8-bfdb68cf7f65','Y',530,5,3)
 ;
 
 -- 10/01/2017 12h10min55s BRST

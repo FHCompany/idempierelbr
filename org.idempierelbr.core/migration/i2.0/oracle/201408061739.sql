@@ -153,8 +153,8 @@ ALTER TABLE LBR_BankAccount_Convenio ADD LBR_BankAccount_Convenio_UU NVARCHAR2(3
 ;
 
 -- Aug 6, 2014 4:02:15 PM BRT
-ALTER TABLE LBR_BankAccount_Convenio ADD CONSTRAINT LBR_BankAccount_Convenio_UU_uu_idx UNIQUE (LBR_BankAccount_Convenio_UU)
-;
+-- ALTER TABLE LBR_BankAccount_Convenio ADD CONSTRAINT LBR_BankAccount_Convenio_UU_uu_idx UNIQUE (LBR_BankAccount_Convenio_UU)
+-- ;
 
 -- Aug 6, 2014 4:04:01 PM BRT
 INSERT INTO AD_Column (SeqNoSelection,IsSyncDatabase,Version,AD_Column_ID,IsMandatory,IsTranslated,IsIdentifier,SeqNo,IsParent,FieldLength,IsSelectionColumn,IsKey,IsAutocomplete,IsAllowLogging,AD_Column_UU,IsUpdateable,ColumnName,Description,Help,Name,IsAllowCopy,Updated,CreatedBy,IsActive,Created,UpdatedBy,IsToolbarButton,IsAlwaysUpdateable,AD_Client_ID,IsEncrypted,IsSecure,AD_Element_ID,AD_Reference_ID,AD_Table_ID,AD_Org_ID,EntityType) VALUES (0,'N',0,1000977,'N','N','N',0,'N',255,'Y','N','N','Y','f6f43141-0d9b-448b-b984-f5ccf87e39d1','Y','Description','Optional short description of the record','A description is limited to 255 characters.','Description','Y',TO_DATE('2014-08-06 16:04:01','YYYY-MM-DD HH24:MI:SS'),0,'Y',TO_DATE('2014-08-06 16:04:01','YYYY-MM-DD HH24:MI:SS'),0,'N','N',0,'N','N',275,10,1000050,0,'LBR')
@@ -427,8 +427,8 @@ ALTER TABLE LBR_BankAccount_Carteira ADD LBR_BankAccount_Carteira_UU NVARCHAR2(3
 ;
 
 -- Aug 6, 2014 4:38:14 PM BRT
-ALTER TABLE LBR_BankAccount_Carteira ADD CONSTRAINT LBR_BankAccount_Carteira_UU_uu_idx UNIQUE (LBR_BankAccount_Carteira_UU)
-;
+-- ALTER TABLE LBR_BankAccount_Carteira ADD CONSTRAINT LBR_BankAccount_Carteira_UU_uu_idx UNIQUE (LBR_BankAccount_Carteira_UU)
+-- ;
 
 -- Aug 6, 2014 4:42:05 PM BRT
 INSERT INTO AD_Element (ColumnName,AD_Element_ID,Help,Name,PrintName,AD_Element_UU,AD_Org_ID,CreatedBy,UpdatedBy,IsActive,AD_Client_ID,EntityType,Created,Updated) VALUES ('LBR_CarteiraNo',1000289,'Defines the Carteira number','Carteira No.','Carteira No.','ba4fde44-0d9b-4b91-b479-32ad509df1ce',0,0,0,'Y',0,'LBR',TO_DATE('2014-08-06 16:42:05','YYYY-MM-DD HH24:MI:SS'),TO_DATE('2014-08-06 16:42:05','YYYY-MM-DD HH24:MI:SS'))
