@@ -414,11 +414,19 @@ public class CreateNotaFiscal extends SvrProcess
 				MProduct mProduct = new MProduct(getCtx(), M_Product_ID, get_TrxName());
 				
 				String LBR_CodANP = mProduct.get_ValueAsString("LBR_CodANP");
+				String LBR_DescANP = mProduct.get_ValueAsString("LBR_DescANP");
 				
 				if(!LBR_CodANP.isEmpty()){
 					MLBRNotaFiscalLineComb mComb = new MLBRNotaFiscalLineComb(getCtx(), 0, get_TrxName());
+					mComb.setAD_Org_ID(nf.getAD_Org_ID());
 					mComb.setLBR_NotaFiscalLine_ID(nfLine.get_ID());
 					mComb.setLBR_CodANP(LBR_CodANP);
+					
+					if (LBR_DescANP == null || LBR_DescANP.length() < 2)
+						mComb.setLBR_DescANP(mProduct.getName());
+					else
+						mComb.setLBR_DescANP(LBR_DescANP);
+					
 					mComb.setC_Region_ID(bpRegion.get_ID());
 					mComb.saveEx();
 				}
@@ -667,8 +675,8 @@ public class CreateNotaFiscal extends SvrProcess
 	 * @return doc type
 	 */
 	private String getPaymentRule() {
-		// Default: OTHER
-		String payRule = "2"; // OTHER
+		// Default: CASH (ON SIGHT)
+		String payRule = "1"; // CASH (ON SIGHT)
 		
 		String poPayRule = "";
 		int poC_PaymentTerm_ID = 0;

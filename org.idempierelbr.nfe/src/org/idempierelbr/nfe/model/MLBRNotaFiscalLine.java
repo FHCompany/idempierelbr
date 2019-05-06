@@ -419,12 +419,21 @@ public class MLBRNotaFiscalLine extends X_LBR_NotaFiscalLine {
 			}
 			// ICMS60
 			else if (TextUtil.match(taxStatusDetailed, MLBRDocLineICMS.CST_ICMS_60)) {
-				if (icmsLines[0].getLBR_ICMSST_TaxBAmtWhd() != null || 
-						icmsLines[0].getLBR_ICMSST_TaxAmtWhd() != null) {
-
+				if (icmsLines[0].getLBR_ICMSST_TaxBAmtWhd() != null &&
+						icmsLines[0].getLBR_ICMSST_TaxBAmtWhd().signum() != 0 && 
+						icmsLines[0].getLBR_ICMSST_TaxAmtWhd() != null &&
+						icmsLines[0].getLBR_ICMSST_TaxAmtWhd().signum() != 0 &&
+						icmsLines[0].getLBR_ICMSST_TaxRate() != null &&
+						icmsLines[0].getLBR_ICMSST_TaxRate().signum() != 0
+						) {
 					if (icmsLines[0].getLBR_ICMSST_TaxBAmtWhd() == null)
 						throw new AdempiereException(prefixException + "'@LBR_ICMSST_TaxBAmtWhd@'");
 					icmsGrupo.setvBCSTRet(TextUtil.bigdecimalToString(icmsLines[0].getLBR_ICMSST_TaxBAmtWhd()));
+					
+					if (icmsLines[0].getLBR_ICMSST_TaxRate() == null)
+						throw new AdempiereException(prefixException + "'@LBR_ICMSST_TaxRate@'");
+					icmsGrupo.setpST(TextUtil.bigdecimalToString(icmsLines[0].getLBR_ICMSST_TaxRate()));
+					
 					if (icmsLines[0].getLBR_ICMSST_TaxAmtWhd() == null) 
 						throw new AdempiereException(prefixException + "'@LBR_ICMSST_TaxAmtWhd@'");
 					icmsGrupo.setvICMSSTRet(TextUtil.bigdecimalToString(icmsLines[0].getLBR_ICMSST_TaxAmtWhd()));
@@ -1249,10 +1258,13 @@ public class MLBRNotaFiscalLine extends X_LBR_NotaFiscalLine {
 					throw new AdempiereException(prefixException + "'@LBR_TaxBaseAmt@'");
 				icmsGrupo.setvBCUFDest(TextUtil.bigdecimalToString(icmsLines[0].getLBR_TaxBaseAmt()));
 				
+				// LBR_DIFAL_TaxBaseFCPUFDest				
+				if (icmsLines[0].getLBR_DIFAL_TaxBaseFCPUFDest() != null)
+					icmsGrupo.setvBCFCPUFDest(TextUtil.bigdecimalToString(icmsLines[0].getLBR_DIFAL_TaxBaseFCPUFDest(), 2));
+				
 				// LBR_DIFAL_TaxRateFCPUFDest				
-				if (icmsLines[0].getLBR_DIFAL_TaxRateFCPUFDest() == null)
-					throw new AdempiereException(prefixException + "'@LBR_DIFAL_TaxRateFCPUFDest@'");
-				icmsGrupo.setpFCPUFDest(TextUtil.bigdecimalToString(icmsLines[0].getLBR_DIFAL_TaxRateFCPUFDest(), 4));
+				if (icmsLines[0].getLBR_DIFAL_TaxRateFCPUFDest() != null)
+					icmsGrupo.setpFCPUFDest(TextUtil.bigdecimalToString(icmsLines[0].getLBR_DIFAL_TaxRateFCPUFDest(), 4));
 			
 				// LBR_DIFAL_TaxRateICMSUFDest				
 				if (icmsLines[0].getLBR_DIFAL_TaxRateICMSUFDest() == null)
@@ -1270,9 +1282,8 @@ public class MLBRNotaFiscalLine extends X_LBR_NotaFiscalLine {
 				icmsGrupo.setpICMSInterPart(TextUtil.bigdecimalToString(icmsLines[0].getLBR_DIFAL_RateICMSInterPart(), 4));
 				
 				// LBR_DIFAL_TaxAmtFCPUFDest
-				if (icmsLines[0].getLBR_DIFAL_TaxAmtFCPUFDest() == null)
-					throw new AdempiereException(prefixException + "'@LBR_DIFAL_TaxAmtFCPUFDest@'");
-				icmsGrupo.setvFCPUFDest(TextUtil.bigdecimalToString(icmsLines[0].getLBR_DIFAL_TaxAmtFCPUFDest()));
+				if (icmsLines[0].getLBR_DIFAL_TaxAmtFCPUFDest() != null)
+					icmsGrupo.setvFCPUFDest(TextUtil.bigdecimalToString(icmsLines[0].getLBR_DIFAL_TaxAmtFCPUFDest()));
 				
 				// LBR_DIFAL_TaxAmtICMSUFDest
 				if (icmsLines[0].getLBR_DIFAL_TaxAmtICMSUFDest() == null)
