@@ -1,5 +1,5 @@
 syntax: glob
-bin
+*/bin
 com.todobom.idempierelbr.banking.bancodobrasil/target
 com.todobom.idempierelbr.banking.banrisul/target
 com.todobom.idempierelbr.banking.bradesco/target
